@@ -39,6 +39,7 @@ def add_tasks(cur, user):
     date = input('Date - ')
     cur.execute('insert into tasks (title, description, date_at, user_id) values (%s, %s, %s, %s)', (title, description,date, user.id))
 
+
 @con_db
 def delete_tasks(cur, user):
     id = input('tasks, id - ')
